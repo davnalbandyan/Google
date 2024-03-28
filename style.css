@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    @font-face {
+        font-family: google;
+        src: url(./Google-New/Product\ Sans\ Regular.ttf);
+    }
+
+.google{
+    height: 100vh;
+    background:white;
+    text-align: center;
+    padding: 10vw;
+
+}
+
+
+.google span{
+font-family: google;
+font-size: 100px;
+}    
