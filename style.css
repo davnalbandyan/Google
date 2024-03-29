@@ -9,9 +9,11 @@
         src: url(./Google-New/Product\ Sans\ Regular.ttf);
     }
 
+ 
+
 .google{
     height: 100vh;
-    background:white;
+    background:#202124;
     text-align: center;
     padding: 10vw;
 
@@ -21,4 +23,47 @@
 .google span{
 font-family: google;
 font-size: 100px;
+color:var(--color);
+letter-spacing: -4px
 }    
+
+
+.searchBar{
+    position: relative;
+   display: inline;
+}
+
+.searchBar .search{
+    width: 567px;
+    height: 51px;
+    margin-top: 2vw;
+    border-radius: 30px;
+    background-color: #202124;
+    border:.5px  solid white;
+    color:white;
+    padding-left: 30px; 
+    padding-right: 46px;
+   
+}
+
+
+.searchBar .search:hover{
+    background-color:#313034
+}
+
+
+.fa-magnifying-glass{
+    position: absolute;
+    top: 0vw;
+    left: 0.5vw;
+    z-index: 1;
+}
+
+.fa-keyboard{
+    position: absolute;
+    top: 0vw;
+    left: 27.5vw;
+    z-index: 1;
+    cursor: pointer;
+}
+
