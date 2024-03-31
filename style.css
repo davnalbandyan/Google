@@ -28,6 +28,8 @@ letter-spacing: -4px
 }    
 
 
+
+
 .searchBar{
     position: relative;
    display: inline;
@@ -41,8 +43,9 @@ letter-spacing: -4px
     background-color: #202124;
     border:.5px  solid white;
     color:white;
-    padding-left: 30px; 
-    padding-right: 46px;
+    padding-left: 40px; 
+    padding-right: 118px;
+    font-size: 20px;
    
 }
 
@@ -52,14 +55,14 @@ letter-spacing: -4px
 }
 
 
-.fa-magnifying-glass{
+.searchBar .fa-magnifying-glass{
     position: absolute;
-    top: 0vw;
-    left: 0.5vw;
+    top:0vw;
+    left: 0.7vw;
     z-index: 1;
 }
 
-.fa-keyboard{
+.searchBar .fa-keyboard{
     position: absolute;
     top: 0vw;
     left: 27.5vw;
@@ -67,3 +70,62 @@ letter-spacing: -4px
     cursor: pointer;
 }
 
+
+.searchBar .fa-x{
+    position: absolute;
+    top: 0;
+    right: 5vw;
+    cursor: pointer;
+    
+}
+
+
+.searchBar .fa-microphone{
+    position: absolute;
+    top: 0;
+    right: 3.3vw;
+    cursor: pointer;
+}
+
+
+.buttons{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 31px;
+    margin-top: 14px;
+    margin-left: 33%;
+}
+
+
+.buttons #searchGoogle{
+    border:1px solid #303134;
+    border-radius:4px;
+    width: 130px;
+    height: 36px;
+    background-color:#303134;
+    color:white;
+    font-size: 14px;
+    cursor: pointer;
+   
+}
+
+#linkSearchGoogle input{
+    border:1px solid #303134;
+    border-radius:4px;
+    width: 130px;
+    height: 36px;
+    background-color:#303134;
+    color:white;
+    font-size: 14px;
+   cursor: pointer;
+}
+
+#linkSearchGoogle input:hover{
+    border-color: white;
+}
+
+.buttons #searchGoogle:hover{
+    border-color: white;
+}
