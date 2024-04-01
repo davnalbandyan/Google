@@ -1,68 +1,70 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    }
+}
 
-    @font-face {
-        font-family: google;
-        src: url(./Google-New/Product\ Sans\ Regular.ttf);
-    }
+@font-face {
+    font-family: google;
+    src: url(./Google-New/Product\ Sans\ Regular.ttf);
+}
 
- 
 
-.google{
+
+.google {
+    position: relative;
     height: 100vh;
-    background:#202124;
+    background: #202124;
     text-align: center;
     padding: 10vw;
+   
 
 }
 
 
-.google span{
-font-family: google;
-font-size: 100px;
-color:var(--color);
-letter-spacing: -4px
-}    
+.google span {
+    font-family: google;
+    font-size: 100px;
+    color: var(--color);
+    letter-spacing: -4px
+}
 
 
 
 
-.searchBar{
+.searchBar {
     position: relative;
-   display: inline;
+    display: inline;
 }
 
-.searchBar .search{
+.searchBar .search {
     width: 567px;
     height: 51px;
     margin-top: 2vw;
     border-radius: 30px;
     background-color: #202124;
-    border:.5px  solid white;
-    color:white;
-    padding-left: 40px; 
+    border: .5px solid white;
+    color: white;
+    padding-left: 40px;
     padding-right: 118px;
     font-size: 20px;
-   
+
 }
 
 
-.searchBar .search:hover{
-    background-color:#313034
+.searchBar .search:hover {
+    background-color: #313034
 }
 
 
-.searchBar .fa-magnifying-glass{
+.searchBar .fa-magnifying-glass {
     position: absolute;
-    top:0vw;
+    top: 0vw;
     left: 0.7vw;
     z-index: 1;
 }
 
-.searchBar .fa-keyboard{
+.searchBar .fa-keyboard {
     position: absolute;
     top: 0vw;
     left: 27.5vw;
@@ -71,16 +73,17 @@ letter-spacing: -4px
 }
 
 
-.searchBar .fa-x{
+.searchBar .fa-x {
     position: absolute;
     top: 0;
     right: 5vw;
     cursor: pointer;
-    
+    display: none;
+
 }
 
 
-.searchBar .fa-microphone{
+.searchBar .fa-microphone {
     position: absolute;
     top: 0;
     right: 3.3vw;
@@ -88,7 +91,7 @@ letter-spacing: -4px
 }
 
 
-.buttons{
+.buttons {
     width: 30%;
     display: flex;
     justify-content: center;
@@ -99,33 +102,36 @@ letter-spacing: -4px
 }
 
 
-.buttons #searchGoogle{
-    border:1px solid #303134;
-    border-radius:4px;
+.buttons #searchGoogle {
+    border: 1px solid #303134;
+    border-radius: 4px;
     width: 130px;
     height: 36px;
-    background-color:#303134;
-    color:white;
+    background-color: #303134;
+    color: white;
     font-size: 14px;
     cursor: pointer;
-   
+    user-select: none;
+
 }
 
-#linkSearchGoogle input{
-    border:1px solid #303134;
-    border-radius:4px;
+#linkSearchGoogle input {
+    border: 1px solid #303134;
+    border-radius: 4px;
     width: 130px;
     height: 36px;
-    background-color:#303134;
-    color:white;
+    background-color: #303134;
+    color: white;
     font-size: 14px;
-   cursor: pointer;
+    cursor: pointer;
+    user-select: none;
 }
 
-#linkSearchGoogle input:hover{
+#linkSearchGoogle input:hover {
     border-color: white;
 }
 
-.buttons #searchGoogle:hover{
+.buttons #searchGoogle:hover {
     border-color: white;
 }
+
