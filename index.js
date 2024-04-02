@@ -14,9 +14,6 @@ searchBar.addEventListener("input", searchBarX);
 function searchBarX() {
     
     let searchValue = searchBar.value.toLowerCase();
-    
-  
-   
     if (searchValue) {
         btnX.style.display = "block";
     } else {
@@ -28,22 +25,20 @@ function searchBarX() {
             searchBar.value = " "
         }
     })
-    
-  
-};
+     };
 
-searchGoogle.addEventListener("click",()=>{
+function search(){
     location.href = "https://www.google.ru/search?q=" + searchBar.value;
-    searchBar.value = null;
-});
+    searchBar.value = " "
+
+}
+
+searchGoogle.addEventListener("click",search);
 
 
 let glass = document.querySelector('.fa-magnifying-glass');
 
-glass.addEventListener("click",()=>{
-    location.href = "https://www.google.ru/search?q=" + searchBar.value;
-    searchBar.value = null; 
-})
+
 
 let sunny = document.querySelector(".darkAndlight .fa-sun");
 let moon = document.querySelector(".darkAndlight .fa-moon");
@@ -69,3 +64,4 @@ moon.addEventListener("click",()=>{
 
 
 
+// google i aj koxmi pahy sarqi, pochta,karta, keybordy, u mek el vor im search aracnery pahi, ha mek el glass y nenc ara vor datark search chani
