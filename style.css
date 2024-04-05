@@ -156,3 +156,30 @@
     border-color: white;
 }
 
+
+.google .rightside {
+    position: absolute;
+    display: flex;
+    gap: 12px;
+    top: 1vw;
+    right: 7vw;
+    color:white
+}
+
+.google .rightside  .gmail  a{
+    color:white;
+    text-decoration: none;
+}
+
+
+.google .rightside  .images  a{
+    text-decoration: none;
+    color:white;
+}
+
+.google .rightside  .gmail  a:hover{
+    text-decoration:underline}
+
+    .google .rightside  .images  a:hover{
+        text-decoration: underline;
+    }
