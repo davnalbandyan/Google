@@ -17,10 +17,7 @@
     background: #202124;
     text-align: center;
     padding: 10vw;
-    transition: 1s;
     
-   
-
 }
 
 .google .darkAndlight{
@@ -110,8 +107,6 @@
     right: 3.3vw;
     cursor: pointer;
 }
-
-
 .buttons {
     width: 30%;
     display: flex;
@@ -163,7 +158,7 @@
     display: flex;
     gap: 20px;
     top: 1vw;
-    right: 14vw;
+    right: 12vw;
     color:white
 }
 
@@ -190,10 +185,14 @@
 .google .menupoints{
     position: absolute;
     top: -10px;
-    right: 229px;
+    right: 183px;
     font-size: 39px;    
     cursor: pointer;
+    transition: .2s;
 }
+
+
+
 
 .google .menupoints p{
     color:white
@@ -204,4 +203,27 @@
 }
 .google .menupoints p:nth-child(2){
     margin-bottom: -36px;
+}
+
+.google #btnLogin{
+position: absolute;
+top: 0.9vw;
+right: 3vw;
+
+
+
+}
+
+
+.google #btnLogin input{
+
+    width: 100px;
+    height: 38px;
+    color: white;
+    background-color: rgb(15, 138, 160);
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
 }
