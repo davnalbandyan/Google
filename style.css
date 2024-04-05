@@ -158,17 +158,19 @@
 
 
 .google .rightside {
+    width: 115px;
     position: absolute;
     display: flex;
-    gap: 12px;
+    gap: 20px;
     top: 1vw;
-    right: 7vw;
+    right: 14vw;
     color:white
 }
 
 .google .rightside  .gmail  a{
     color:white;
     text-decoration: none;
+   
 }
 
 
@@ -183,3 +185,23 @@
     .google .rightside  .images  a:hover{
         text-decoration: underline;
     }
+
+
+.google .menupoints{
+    position: absolute;
+    top: -10px;
+    right: 229px;
+    font-size: 39px;    
+    cursor: pointer;
+}
+
+.google .menupoints p{
+    color:white
+}
+
+.google .menupoints p:nth-child(1){
+    margin-bottom: -36px;
+}
+.google .menupoints p:nth-child(2){
+    margin-bottom: -36px;
+}
