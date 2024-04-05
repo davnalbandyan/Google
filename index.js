@@ -62,6 +62,8 @@ function searchBarX() {
     };
 
 
-/* google i aj koxmi pahy sarqi, pochta,karta, keybordy, 
-u mek el vor im search aracnery pahi, ha mek 
-el glass y nenc ara vor datark search chani*/
+
+
+let menuPoint = document.querySelector(".menupoints");
+
+menuPoint.addEventListener("click",show) // show function to open the icons of google, we can make it on html or in js need to think
