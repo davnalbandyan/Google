@@ -21,30 +21,31 @@ sunny.addEventListener("click",()=>{
     sunny.style.display = "none";
     moon.style.display = "block";
     searchBar.style.border = "5px solid black";
-    searchBar.style.cssText = `background-color:white;color:black`
+    searchBar.style.cssText = `background-color:white;color:black`;
 });
 
 moon.addEventListener("click",()=>{
     google.style.background = "#202124";
     moon.style.display = "none";
-    sunny.style.cssText = `background:white, border-color:black`
-    searchBar.style.cssText = `background-color:202124;color:white`
+    sunny.style.cssText = `background:white, border-color:black`;
+    searchBar.style.cssText = `background-color:202124;color:white`;
 
 });
 
 
 glass.addEventListener("click",()=>{
-    let value = searchBar.value
+    let value = searchBar.value;
     if(value.trim().length > 0 ){
         search()
     }
-})
+});
 
 function search(){
     location.href = "https://www.google.ru/search?q=" + searchBar.value;
     searchBar.value = " "
 
 };
+
 function searchBarX() {
     let searchValue = searchBar.value.toLowerCase();
    if (searchValue) {
@@ -61,4 +62,6 @@ function searchBarX() {
     };
 
 
-// google i aj koxmi pahy sarqi, pochta,karta, keybordy, u mek el vor im search aracnery pahi, ha mek el glass y nenc ara vor datark search chani
+/* google i aj koxmi pahy sarqi, pochta,karta, keybordy, 
+u mek el vor im search aracnery pahi, ha mek 
+el glass y nenc ara vor datark search chani*/
