@@ -39,13 +39,19 @@ glass.addEventListener("click",()=>{
         search()
     }
 });
-
+/**
+ * @"search that what user will search"
+ */
 function search(){
     location.href = "https://www.google.ru/search?q=" + searchBar.value;
     searchBar.value = " "
 
 };
 
+/**
+ * "using the methods for add or remove the X, and use Enter to make search"
+ * 
+ */
 function searchBarX() {
     let searchValue = searchBar.value.toLowerCase();
    if (searchValue) {
@@ -66,4 +72,21 @@ function searchBarX() {
 
 let menuPoint = document.querySelector(".menupoints");
 
-menuPoint.addEventListener("click",show) // show function to open the icons of google, we can make it on html or in js need to think
+
+// menuPoint.addEventListener("click", show);
+
+// function show() {
+//     let newBorder = document.createElement("div");
+//     newBorder.style.cssText = `
+//         width: 150px;
+//         height: 150px;
+//         background-color: gray;
+//         position:relative;
+//         display:inline
+        
+//     `;
+//     menuPoint.append(newBorder); // Append the newly created div to menuPoint
+// }
+
+
+
