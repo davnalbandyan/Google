@@ -85,8 +85,7 @@
 .searchBar .fa-keyboard {
     position: absolute;
     top: 0vw;
-    left: 27.5vw;
-    z-index: 1;
+    right: 1.3vw;
     cursor: pointer;
 }
 
@@ -184,8 +183,10 @@
 
 .google .menupoints{
     position: absolute;
-    top: -10px;
-    right: 183px;
+    width: 25px;
+    height: 25px;
+    top: -8px;
+    right: 187px;
     font-size: 39px;    
     cursor: pointer;
     transition: .2s;
@@ -227,3 +228,52 @@ right: 3vw;
     font-size: 16px;
     cursor: pointer;
 }
+
+.test{
+    color:red
+}
+
+.google .menu{
+
+width: 350px;
+height: 235px;
+top:3.6vw;
+right:1vw;
+background-color: #1b1b1b;
+position:absolute;
+border-radius:35px;
+display: none;
+}
+
+.google .menu .icons {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+    margin-top: 12px;
+    padding: 18px 6px 0 6px;
+    width: 340px;
+    cursor: pointer;
+}
+
+.google .menu .icons > * {
+    flex: 0 0 calc(33.33% - 20px); 
+     color:white;
+}
+
+.google .menu .icons .play{
+    margin-top: 50px;
+}
+.google .menu .icons .news{
+    margin-top: 50px;
+}
+
+.google .menu .icons .mail{
+    margin-top: 50px;
+}
+
+.menuShow{
+    display: block !important;
+}
+
+
