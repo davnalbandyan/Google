@@ -71,22 +71,10 @@ function searchBarX() {
 
 
 let menuPoint = document.querySelector(".menupoints");
+let  menu = document.querySelector('.menu');
 
-
-// menuPoint.addEventListener("click", show);
-
-// function show() {
-//     let newBorder = document.createElement("div");
-//     newBorder.style.cssText = `
-//         width: 150px;
-//         height: 150px;
-//         background-color: gray;
-//         position:relative;
-//         display:inline
-        
-//     `;
-//     menuPoint.append(newBorder); // Append the newly created div to menuPoint
-// }
-
+menuPoint.addEventListener("click",()=>{
+    menu.classList.toggle("menuShow")
+})
 
 
