@@ -1,5 +1,5 @@
-"use strict"
 
+document.addEventListener("DOMContentLoaded", () => {
 let searchBar = document.querySelector(".searchBar .search");// input text
 let btnX = document.querySelector('.searchBar .fa-x');  
 let searchGoogle = document.getElementById("searchGoogle") //search button
@@ -15,6 +15,10 @@ searchGoogle.addEventListener("click",search);
 let glass = document.querySelector('.fa-magnifying-glass');
 let sunny = document.querySelector(".darkAndlight .fa-sun");
 let moon = document.querySelector(".darkAndlight .fa-moon");
+let gmail = document.querySelector(".gmail a");
+let images = document.querySelector(".images a");
+
+let menupointsP = document.querySelectorAll("[data-colored]");
 
 sunny.addEventListener("click",()=>{
     google.style.background = "white";
@@ -22,6 +26,14 @@ sunny.addEventListener("click",()=>{
     moon.style.display = "block";
     searchBar.style.border = "5px solid black";
     searchBar.style.cssText = `background-color:white;color:black`;
+    gmail.style.color = "black";
+    images.style.color = "black";
+   menupointsP.forEach(item=>{
+    if(item.dataset.colored === "one"){
+        item.style.color = "black"
+    }
+   })
+
 });
 
 moon.addEventListener("click",()=>{
@@ -29,7 +41,13 @@ moon.addEventListener("click",()=>{
     moon.style.display = "none";
     sunny.style.cssText = `background:white, border-color:black`;
     searchBar.style.cssText = `background-color:202124;color:white`;
-
+    gmail.style.color = "white";
+    images.style.color = "white";
+    menupointsP.forEach(item=>{
+        if(item.dataset.colored === "one"){
+            item.style.color = "white"
+        }
+       })
 });
 
 
@@ -76,5 +94,7 @@ let  menu = document.querySelector('.menu');
 menuPoint.addEventListener("click",()=>{
     menu.classList.toggle("menuShow")
 })
+  });
 
 
+//arevi pahy dzi vor erb sexmem google u images y chkori u menu i ketery,avekacru link er u erevi te verj,ha mek el keybordy pordzi anes
