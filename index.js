@@ -97,4 +97,3 @@ menuPoint.addEventListener("click",()=>{
   });
 
 
-//arevi pahy dzi vor erb sexmem google u images y chkori u menu i ketery,avekacru link er u erevi te verj,ha mek el keybordy pordzi anes
